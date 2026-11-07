@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genç Tek Eskişehir-Üniversitede Bir Gün Etkinliği</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 650px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+        .form-group {
+            margin-bottom: 18px;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #444;
+        }
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .submit-btn {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Genç Tek Eskişehir-Üniversitede Bir Gün Etkinliği</h2>
+    <form id="projeFormu">
+        
+        <div class="form-group">
+            <label for="ad_soyad">Ad Soyad:</label>
+            <input type="text" id="ad_soyad" name="ad_soyad" required placeholder="Adınızı ve soyadınızı giriniz">
+        </div>
+
+        <div class="form-group">
+            <label for="okul">Okul:</label>
+            <input type="text" id="okul" name="okul" required placeholder="Okulunuzun adını giriniz">
+        </div>
+
+        <div class="form-group">
+            <label for="sinif">Sınıf:</label>
+            <input type="text" id="sinif" name="sinif" required placeholder="Sınıfınızı giriniz (ör. 10-A)">
+        </div>
+
+    
+
+        <div class="form-group">
+            <label for="danisman_ogretmen">Danışman Öğretmen:</label>
+            <input type="text" id="danisman_ogretmen" name="danisman_ogretmen" required placeholder="Danışman öğretmeninizin adını giriniz">
+        </div>
+
+        <div class="form-group">
+            <label for="proje_alani">Proje Alanı (Geçmiş Projeler):</label>
+            <textarea id="proje_alani" name="proje_alani" rows="4" maxlength="120" placeholder="Geçmiş projelerinizden bahsediniz (En fazla 120 karakter)..."></textarea>
+            <small style="color: #666; font-size: 12px;">Maksimum 120 karakter girebilirsiniz.</small>
+        </div>
+
+        <div class="form-group">
+            <label for="tercih1">1. Tercih:</label>
+            <select id="tercih1" name="tercih1" required>
+                <option value="" disabled selected>Bir konu/alan seçiniz</option>
+                <option value="Yazılık Mühendisliği">Osmangazi Üniversitesi Mühendislik ve Mimarlık Fakültesi- Yazılık Mühendisliği</option>
+                <option value="Uçak Mühendisliği">Osmangazi Üniversitesi Mühendislik ve Mimarlık Fakültesi- Uçak Mühendisliği</option>
+                <option value="Bilgisayar Mühendisliği">Osmangazi Üniversitesi Mühendislik ve Mimarlık Fakültesi- Bilgisayar Mühendisliği</option>
+                <option value="Bilgisayar Mühendisliği (İngilizce) Programı">Eskişehir Teknik Üniversitesi Mühendislik Fakültesi- Bilgisayar Mühendisliği (İngilizce) Programı </option>
+                <option value="Uzaktan Algılama ve Coğrafi Bilgi Sistemleri(UCS)Programı">Eskişehir Teknik Üniversitesi Bilişim Teknolojileri MYO- Uzaktan Algılama ve Coğrafi Bilgi Sistemleri(UCS)Programı</option>
+                <option value="UCS Programı (sabah) ve Oyun Geliştirme ve Programlama(Öğleden sonra)">Eskişehir Teknik Üniversitesi Bilişim Teknolojileri MYO- UCS Programı (sabah) ve Oyun Geliştirme ve Programlama(Öğleden sonra)</option>
+                <option value="UCS Programı (sabah) ve Oyun Geliştirme ve Programlama">Eskişehir Teknik Üniversitesi Bilişim Teknolojileri MYO- UCS Programı (sabah) ve Oyun Geliştirme ve Programlama</option>
+                <option value="Bilişim Teknolojileri MYO-Uzaktan Algılama ve Coğrafi Bilgi Sistemleri (UCS) Programı">Bilişim Teknolojileri MYO-Uzaktan Algılama ve Coğrafi Bilgi Sistemleri (UCS) Programı</option>
+                <option value="Uzaktan Algılama ve Coğrafi Bilgi Sistemleri (UCS) Programı(sabah) ve Oyun Geliştirme ve Programlama (öğleden sonra) Programı">Bilişim Teknolojileri MYO-Uzaktan Algılama ve Coğrafi Bilgi Sistemleri (UCS) Programı(sabah) ve Oyun Geliştirme ve Programlama (öğleden sonra) Programı</option>
+                <option value="Bulut Bilişim Operatörlüğü Programı (sabah) ve Robotik ve Yapay Zeka (öğleden sonra) Programı">Bilişim Teknolojileri MYO-Bulut Bilişim Operatörlüğü Programı (sabah) ve Robotik ve Yapay Zeka (öğleden sonra) Programı</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="tercih2">2. Tercih:</label>
+            <select id="tercih2" name="tercih2" required>
+                 <option value="" disabled selected>Bir konu/alan seçiniz</option>
+                <option value="Yazılık Mühendisliği">Osmangazi Üniversitesi Mühendislik ve Mimarlık Fakültesi- Yazılık Mühendisliği</option>
+                <option value="Uçak Mühendisliği">Osmangazi Üniversitesi Mühendislik ve Mimarlık Fakültesi- Uçak Mühendisliği</option>
+                <option value="Bilgisayar Mühendisliği">Osmangazi Üniversitesi Mühendislik ve Mimarlık Fakültesi- Bilgisayar Mühendisliği</option>
+                <option value="Bilgisayar Mühendisliği (İngilizce) Programı">Eskişehir Teknik Üniversitesi Mühendislik Fakültesi- Bilgisayar Mühendisliği (İngilizce) Programı </option>
+                <option value="Uzaktan Algılama ve Coğrafi Bilgi Sistemleri(UCS)Programı">Eskişehir Teknik Üniversitesi Bilişim Teknolojileri MYO- Uzaktan Algılama ve Coğrafi Bilgi Sistemleri(UCS)Programı</option>
+                <option value="UCS Programı (sabah) ve Oyun Geliştirme ve Programlama(Öğleden sonra)">Eskişehir Teknik Üniversitesi Bilişim Teknolojileri MYO- UCS Programı (sabah) ve Oyun Geliştirme ve Programlama(Öğleden sonra)</option>
+                <option value="UCS Programı (sabah) ve Oyun Geliştirme ve Programlama">Eskişehir Teknik Üniversitesi Bilişim Teknolojileri MYO- UCS Programı (sabah) ve Oyun Geliştirme ve Programlama</option>
+                <option value="Bilişim Teknolojileri MYO-Uzaktan Algılama ve Coğrafi Bilgi Sistemleri (UCS) Programı">Bilişim Teknolojileri MYO-Uzaktan Algılama ve Coğrafi Bilgi Sistemleri (UCS) Programı</option>
+                <option value="Uzaktan Algılama ve Coğrafi Bilgi Sistemleri (UCS) Programı(sabah) ve Oyun Geliştirme ve Programlama (öğleden sonra) Programı">Bilişim Teknolojileri MYO-Uzaktan Algılama ve Coğrafi Bilgi Sistemleri (UCS) Programı(sabah) ve Oyun Geliştirme ve Programlama (öğleden sonra) Programı</option>
+                <option value="Bulut Bilişim Operatörlüğü Programı (sabah) ve Robotik ve Yapay Zeka (öğleden sonra) Programı">Bilişim Teknolojileri MYO-Bulut Bilişim Operatörlüğü Programı (sabah) ve Robotik ve Yapay Zeka (öğleden sonra) Programı</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="tercih3">3. Tercih:</label>
+            <select id="tercih3" name="tercih3" required>
+                 <option value="" disabled selected>Bir konu/alan seçiniz</option>
+                <option value="Yazılık Mühendisliği">Osmangazi Üniversitesi Mühendislik ve Mimarlık Fakültesi- Yazılık Mühendisliği</option>
+                <option value="Uçak Mühendisliği">Osmangazi Üniversitesi Mühendislik ve Mimarlık Fakültesi- Uçak Mühendisliği</option>
+                <option value="Bilgisayar Mühendisliği">Osmangazi Üniversitesi Mühendislik ve Mimarlık Fakültesi- Bilgisayar Mühendisliği</option>
+                <option value="Bilgisayar Mühendisliği (İngilizce) Programı">Eskişehir Teknik Üniversitesi Mühendislik Fakültesi- Bilgisayar Mühendisliği (İngilizce) Programı </option>
+                <option value="Uzaktan Algılama ve Coğrafi Bilgi Sistemleri(UCS)Programı">Eskişehir Teknik Üniversitesi Bilişim Teknolojileri MYO- Uzaktan Algılama ve Coğrafi Bilgi Sistemleri(UCS)Programı</option>
+                <option value="UCS Programı (sabah) ve Oyun Geliştirme ve Programlama(Öğleden sonra)">Eskişehir Teknik Üniversitesi Bilişim Teknolojileri MYO- UCS Programı (sabah) ve Oyun Geliştirme ve Programlama(Öğleden sonra)</option>
+                <option value="UCS Programı (sabah) ve Oyun Geliştirme ve Programlama">Eskişehir Teknik Üniversitesi Bilişim Teknolojileri MYO- UCS Programı (sabah) ve Oyun Geliştirme ve Programlama</option>
+                <option value="Bilişim Teknolojileri MYO-Uzaktan Algılama ve Coğrafi Bilgi Sistemleri (UCS) Programı">Bilişim Teknolojileri MYO-Uzaktan Algılama ve Coğrafi Bilgi Sistemleri (UCS) Programı</option>
+                <option value="Uzaktan Algılama ve Coğrafi Bilgi Sistemleri (UCS) Programı(sabah) ve Oyun Geliştirme ve Programlama (öğleden sonra) Programı">Bilişim Teknolojileri MYO-Uzaktan Algılama ve Coğrafi Bilgi Sistemleri (UCS) Programı(sabah) ve Oyun Geliştirme ve Programlama (öğleden sonra) Programı</option>
+                <option value="Bulut Bilişim Operatörlüğü Programı (sabah) ve Robotik ve Yapay Zeka (öğleden sonra) Programı">Bilişim Teknolojileri MYO-Bulut Bilişim Operatörlüğü Programı (sabah) ve Robotik ve Yapay Zeka (öğleden sonra) Programı</option>
+            </select>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submitBtn">Formu Gönder</button>
+
+    </form>
+</div>
+
+<script>
+    // 3. Adımda kopyaladığınız Web App URL'sini buraya yapıştırın:
+    const scriptURL = ' https://script.google.com/macros/s/AKfycbzzJkQ6gs4MbiCFOpNMLrFvvbYpB096orwCNw1gMF7WKX3OqNJH7AQyN4hfVfwJq51OAQ/exec';
+   
+    const form = document.getElementById('projeFormu');
+    const btn = document.getElementById('submitBtn');
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        btn.disabled = true;
+        btn.textContent = 'Gönderiliyor...';
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                alert('Başvurunuz başarıyla E-Tabloya kaydedildi!');
+                btn.disabled = false;
+                btn.textContent = 'Formu Gönder';
+                form.reset();
+            })
+            .catch(error => {
+                console.error('Hata!', error.message);
+                alert('Bir hata oluştu, lütfen tekrar deneyin.');
+                btn.disabled = false;
+                btn.textContent = 'Formu Gönder';
+            });
+    });
+</script>
+
+</body>
+</html>
