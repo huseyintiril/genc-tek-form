@@ -85,7 +85,10 @@
             <input type="text" id="sinif" name="sinif" required placeholder="Sınıfınızı giriniz (ör. 10-A)">
         </div>
 
-    
+        <div class="form-group">
+            <label for="iletisim">İletişim No:</label>
+            <input type="text" id="sinif" name="sinif" required placeholder="(5XX)XXXXXXX">
+        </div>
 
         <div class="form-group">
             <label for="danisman_ogretmen">Danışman Öğretmen:</label>
@@ -147,6 +150,11 @@
                 <option value="Uzaktan Algılama ve Coğrafi Bilgi Sistemleri (UCS) Programı(sabah) ve Oyun Geliştirme ve Programlama (öğleden sonra) Programı">Bilişim Teknolojileri MYO-Uzaktan Algılama ve Coğrafi Bilgi Sistemleri (UCS) Programı(sabah) ve Oyun Geliştirme ve Programlama (öğleden sonra) Programı</option>
                 <option value="Bulut Bilişim Operatörlüğü Programı (sabah) ve Robotik ve Yapay Zeka (öğleden sonra) Programı">Bilişim Teknolojileri MYO-Bulut Bilişim Operatörlüğü Programı (sabah) ve Robotik ve Yapay Zeka (öğleden sonra) Programı</option>
             </select>
+        </div>
+        <div class="form-group">
+            <label for="oneri">Görüş ve Öneriler:</label>
+            <textarea id="oneri" name="oneri" rows="4" maxlength="100" placeholder="Etkinlik ile ilgili görüş ve önerilerinizi belirtiniz..."></textarea>
+            <small style="color: #666; font-size: 12px;">Maksimum 100 karakter girebilirsiniz.</small>
         </div>
 
         <button type="submit" class="submit-btn" id="submitBtn">Formu Gönder</button>
